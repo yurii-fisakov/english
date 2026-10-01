@@ -17,4 +17,4 @@ Open [http://127.0.0.1:43123](http://127.0.0.1:43123).
 
 ## GitHub Pages
 
-Pushes to `main` build a static export and publish it to [https://yurii-fisakov.github.io/english/](https://yurii-fisakov.github.io/english/). The Pages build sets `GITHUB_PAGES=true`, which serves the site from `/english`.
+Pushes to `master` build a static export and publish it to [https://yurii-fisakov.github.io/english/](https://yurii-fisakov.github.io/english/). The Pages build sets `GITHUB_PAGES=true`, which serves the site from `/english`.
