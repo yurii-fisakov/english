@@ -358,7 +358,7 @@
     "node_modules/@typescript-eslint/parser": {
       "version": "8.71.0",
       "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.71.0.tgz",
-      "integrity": "sha512-CG4nPk1f2zc8yw4pALqHsFYH2hSSTKI1zx5BPgatM/w==",
+      "integrity": "sha512-CG4nPk1f2zc8yw4pALqHsFYH2hdo+h1T9daSp21+Hnxi9LOE3GT9hAfTKJCBXVNM2GmYs1eMEP615wPoeOgk3A==",
       "dev": true,
       "license": "MIT",
       "dependencies": {
@@ -838,7 +838,7 @@
     "node_modules/@unrs/resolver-binding-linux-x64-musl": {
       "version": "1.12.2",
       "resolved": "https://registry.npmjs.org/@unrs/resolver-binding-linux-x64-musl/-/resolver-binding-linux-x64-musl-1.12.2.tgz",
-      "integrity": "sha512-azrt6+5ydLd8Vt210AAFis/lZevSfYlkkWhZeUXJRqzKBBUJ00CvZ+N33zgbCqimLjsyw5Va6uUxhVa12mI+kaveEw==",
+      "integrity": "sha512-azrt6+5ydLd8Vt210AAFis/lZevSfPw93EJRIJG+xPu4WCJ8K0kppCTpMyLPcKT7H15M4Jnt2tMp5bOvCkRC6A==",
       "cpu": [
         "x64"
       ],
