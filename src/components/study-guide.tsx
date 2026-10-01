@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
-import { Check, Copy, Search, X } from "lucide-react";
+import { Check, Copy, Search, Square, Volume2, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,6 +24,44 @@ const rail: Record<SphereId, string> = {
   education: "border-l-navy",
 };
 
+let activeUtterance: SpeechSynthesisUtterance | null = null;
+
+function voiceLang(kind: "en" | "uk"): "en-GB" | "uk-UA" {
+  return kind === "en" ? "en-GB" : "uk-UA";
+}
+
+function pickVoice(wanted: "en-GB" | "uk-UA"): SpeechSynthesisVoice | undefined {
+  const voices = window.speechSynthesis.getVoices();
+  const norm = (value: string) => value.toLowerCase().replaceAll("_", "-");
+  const target = wanted.toLowerCase();
+  const exact = voices.filter((voice) => norm(voice.lang) === target);
+  const pool =
+    exact.length > 0
+      ? exact
+      : voices.filter((voice) => norm(voice.lang).startsWith(target.slice(0, 2)));
+  if (wanted === "en-GB") {
+    return (
+      pool.find((voice) => /uk|british/i.test(`${voice.name} ${voice.lang}`)) ??
+      pool[0]
+    );
+  }
+  return pool[0];
+}
+
+function waitForVoices(): Promise<void> {
+  if (window.speechSynthesis.getVoices().length > 0) return Promise.resolve();
+  window.speechSynthesis.getVoices();
+  return new Promise((resolve) => {
+    const finish = () => {
+      window.clearTimeout(timer);
+      window.speechSynthesis.removeEventListener("voiceschanged", finish);
+      resolve();
+    };
+    const timer = window.setTimeout(finish, 400);
+    window.speechSynthesis.addEventListener("voiceschanged", finish);
+  });
+}
+
 function answerText(topic: Topic, lang: Lang): string {
   if (lang === "en") return `${topic.answerEn}\n\n${topic.answerPron}`;
   if (lang === "uk") return topic.answerUk;
@@ -38,6 +76,16 @@ export function StudyGuide() {
   const [open, setOpen] = useState<Record<string, boolean>>({});
   const [ready, setReady] = useState<Record<string, boolean>>({});
   const [copied, setCopied] = useState<string | null>(null);
+  const [speakingId, setSpeakingId] = useState<string | null>(null);
+  const speakingRef = useRef<string | null>(null);
+  const speechGeneration = useRef(0);
+
+  useEffect(() => {
+    return () => {
+      activeUtterance = null;
+      window.speechSynthesis?.cancel();
+    };
+  }, []);
 
   useEffect(() => {
     if (!copied) return;
@@ -78,7 +126,52 @@ export function StudyGuide() {
 
   const readyCount = topics.filter((topic) => ready[topic.id]).length;
 
+  function stopSpeaking() {
+    speechGeneration.current += 1;
+    speakingRef.current = null;
+    activeUtterance = null;
+    window.speechSynthesis?.cancel();
+    setSpeakingId(null);
+  }
+
+  async function toggleSpeak(id: string, text: string, kind: "en" | "uk") {
+    if (!("speechSynthesis" in window)) return;
+    if (speakingRef.current === id) {
+      stopSpeaking();
+      return;
+    }
+    const generation = speechGeneration.current + 1;
+    speechGeneration.current = generation;
+    speakingRef.current = id;
+    setSpeakingId(id);
+    activeUtterance = null;
+    window.speechSynthesis.cancel();
+    await waitForVoices();
+    if (speechGeneration.current !== generation) return;
+    const utterance = new SpeechSynthesisUtterance(text);
+    const wanted = voiceLang(kind);
+    utterance.lang = wanted;
+    utterance.rate = 0.9;
+    const voice = pickVoice(wanted);
+    if (voice) utterance.voice = voice;
+    const finish = () => {
+      if (activeUtterance !== utterance) return;
+      activeUtterance = null;
+      speakingRef.current = null;
+      setSpeakingId((current) => (current === id ? null : current));
+    };
+    utterance.onend = finish;
+    utterance.onerror = (event) => {
+      if (event.error === "interrupted" || event.error === "canceled") return;
+      finish();
+    };
+    activeUtterance = utterance;
+    window.speechSynthesis.resume();
+    window.speechSynthesis.speak(utterance);
+  }
+
   function togglePractice() {
+    stopSpeaking();
     setPractice((value) => !value);
     setOpen({});
   }
@@ -293,9 +386,12 @@ export function StudyGuide() {
                   onReveal={() =>
                     setOpen((current) => ({ ...current, [topic.id]: true }))
                   }
-                  onHide={() =>
-                    setOpen((current) => ({ ...current, [topic.id]: false }))
-                  }
+                  onHide={() => {
+                    if (speakingId?.startsWith(`${topic.id}:`)) stopSpeaking();
+                    setOpen((current) => ({ ...current, [topic.id]: false }));
+                  }}
+                  speakingId={speakingId}
+                  onSpeak={(id, text, kind) => void toggleSpeak(id, text, kind)}
                   onCopy={() => void copyAnswer(topic)}
                   onToggleReady={() =>
                     setReady((current) => ({
@@ -351,6 +447,8 @@ function TopicCard({
   onHide,
   onCopy,
   onToggleReady,
+  speakingId,
+  onSpeak,
 }: {
   topic: Topic;
   numeral: string;
@@ -363,6 +461,8 @@ function TopicCard({
   onHide: () => void;
   onCopy: () => void;
   onToggleReady: () => void;
+  speakingId: string | null;
+  onSpeak: (id: string, text: string, kind: "en" | "uk") => void;
 }) {
   const indexLabel = `${numeral} · ${String(topic.index).padStart(2, "0")}`;
 
@@ -392,13 +492,25 @@ function TopicCard({
         {revealed ? (
           <div className="max-w-prose space-y-4">
             {lang !== "uk" ? (
-              <AnswerBlock label={ui.english} lang="en" text={topic.answerEn} />
+              <AnswerBlock
+                label={ui.english}
+                lang="en"
+                text={topic.answerEn}
+                speaking={speakingId === `${topic.id}:en`}
+                onSpeak={() => onSpeak(`${topic.id}:en`, topic.answerEn, "en")}
+              />
             ) : null}
             {lang !== "uk" ? (
               <AnswerBlock label={ui.pronunciation} lang="ru" text={topic.answerPron} />
             ) : null}
             {lang !== "en" ? (
-              <AnswerBlock label={ui.ukrainian} lang="uk" text={topic.answerUk} />
+              <AnswerBlock
+                label={ui.ukrainian}
+                lang="uk"
+                text={topic.answerUk}
+                speaking={speakingId === `${topic.id}:uk`}
+                onSpeak={() => onSpeak(`${topic.id}:uk`, topic.answerUk, "uk")}
+              />
             ) : null}
           </div>
         ) : (
@@ -456,16 +568,38 @@ function AnswerBlock({
   label,
   lang,
   text,
+  speaking = false,
+  onSpeak,
 }: {
   label: string;
   lang: "en" | "uk" | "ru";
   text: string;
+  speaking?: boolean;
+  onSpeak?: () => void;
 }) {
   return (
     <div>
-      <p className="text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
-        {label}
-      </p>
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
+          {label}
+        </p>
+        {onSpeak ? (
+          <Button
+            type="button"
+            variant={speaking ? "default" : "outline"}
+            className="no-print h-11 px-3"
+            aria-pressed={speaking}
+            onClick={onSpeak}
+          >
+            {speaking ? (
+              <Square data-icon="inline-start" />
+            ) : (
+              <Volume2 data-icon="inline-start" />
+            )}
+            {speaking ? ui.stopSpeech : ui.listen}
+          </Button>
+        ) : null}
+      </div>
       <p lang={lang} className="mt-1 text-base leading-7">
         {text}
       </p>
