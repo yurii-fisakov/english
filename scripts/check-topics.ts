@@ -35,8 +35,10 @@ for (const topic of topics) {
   if (!topic.titleUk.endsWith(".")) {
     errors.push(`${topic.id} title does not end with a period`);
   }
+  if (!topic.answerPron.trim()) errors.push(`${topic.id} has no pronunciation`);
   for (const [label, text] of [
     ["en", topic.answerEn],
+    ["pron", topic.answerPron],
     ["uk", topic.answerUk],
   ] as const) {
     const count = sentenceCount(text);

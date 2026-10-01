@@ -25,9 +25,9 @@ const rail: Record<SphereId, string> = {
 };
 
 function answerText(topic: Topic, lang: Lang): string {
-  if (lang === "en") return topic.answerEn;
+  if (lang === "en") return `${topic.answerEn}\n\n${topic.answerPron}`;
   if (lang === "uk") return topic.answerUk;
-  return `${topic.answerEn}\n\n${topic.answerUk}`;
+  return `${topic.answerEn}\n\n${topic.answerPron}\n\n${topic.answerUk}`;
 }
 
 export function StudyGuide() {
@@ -56,6 +56,7 @@ export function StudyGuide() {
         topic.titleEn,
         topicTitleRu[topic.id],
         topic.answerEn,
+        topic.answerPron,
         topic.answerUk,
         meta?.titleUk,
         meta?.titleEn,
@@ -393,6 +394,9 @@ function TopicCard({
             {lang !== "uk" ? (
               <AnswerBlock label={ui.english} lang="en" text={topic.answerEn} />
             ) : null}
+            {lang !== "uk" ? (
+              <AnswerBlock label={ui.pronunciation} lang="ru" text={topic.answerPron} />
+            ) : null}
             {lang !== "en" ? (
               <AnswerBlock label={ui.ukrainian} lang="uk" text={topic.answerUk} />
             ) : null}
@@ -454,7 +458,7 @@ function AnswerBlock({
   text,
 }: {
   label: string;
-  lang: "en" | "uk";
+  lang: "en" | "uk" | "ru";
   text: string;
 }) {
   return (
