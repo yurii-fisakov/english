@@ -52,9 +52,9 @@ export const topics: Topic[] = [
     titleUk: "Повсякденне життя і його проблеми.",
     titleEn: "Everyday life and its problems.",
     answerEn:
-      "My everyday life is school, homework, and helping at home. The main problem is that the day fills up before I find time for myself.",
+      "My everyday life is breakfast for the children, school, and dinner with my husband. The hard part is that the day is full before I have a quiet hour for myself.",
     answerUk:
-      "Моє повсякденне життя складається з навчання, домашніх завдань і допомоги вдома. Найважче знайти час для себе, коли день і так уже заповнений.",
+      "Моє повсякденне життя складається зі сніданку для дітей, школи і вечері з чоловіком. Найважче знайти спокійну годину для себе, коли день і так уже заповнений.",
   },
   {
     id: "personal-2",
@@ -63,9 +63,9 @@ export const topics: Topic[] = [
     titleUk: "Сім’я. Родинні стосунки.",
     titleEn: "Family. Family relations.",
     answerEn:
-      "I live with my parents and my younger brother, and we try to have dinner together. We do not always agree, but we talk it through and support one another.",
+      "I live with my husband and our two children, and we try to have dinner together. We do not always agree, but we talk it through and look after one another.",
     answerUk:
-      "Удома я з батьками та молодшим братом, і ми намагаємося щовечора вечеряти разом. Ми не завжди однієї думки, але говоримо про це й підтримуємо одне одного.",
+      "Удома я з чоловіком і двома дітьми, і ми намагаємося вечеряти разом. Ми не завжди однієї думки, але говоримо про це й дбаємо одне про одного.",
   },
   {
     id: "personal-3",
@@ -74,9 +74,9 @@ export const topics: Topic[] = [
     titleUk: "Характер людини.",
     titleEn: "A person’s character.",
     answerEn:
-      "I am a calm and patient person, though I become stubborn when something really matters to me. Friends say I listen well, and I am learning to speak up for my own view.",
+      "I am a calm and patient person, which helps with two children, though I become stubborn when something really matters to my family. My husband says I listen well, and I am learning to say what I need too.",
     answerUk:
-      "За вдачею я людина спокійна й терпляча, хоча впертість бере гору, коли справа справді важлива. Друзі кажуть, що я вмію слухати, і водночас я вчуся відстоювати власну думку.",
+      "За вдачею я людина спокійна й терпляча, і це допомагає з двома дітьми, хоча впертість бере гору, коли справа справді важлива для родини. Чоловік каже, що я вмію слухати, і водночас я вчуся говорити про власні потреби.",
   },
   {
     id: "personal-4",
@@ -85,9 +85,9 @@ export const topics: Topic[] = [
     titleUk: "Помешкання.",
     titleEn: "Housing.",
     answerEn:
-      "We live in a flat on the fourth floor, with a small kitchen, two bedrooms, and a balcony. I like my own room best, because it is quiet enough for reading and homework.",
+      "We live in a flat on the fourth floor, with a kitchen, our bedroom, a room for the two children, and a balcony. It is not large, but there is a place for homework, meals, and the evening together.",
     answerUk:
-      "Ми живемо у квартирі на четвертому поверсі: невелика кухня, дві спальні й балкон. Найбільше до душі власна кімната, бо там досить тихо для читання й уроків.",
+      "Ми живемо у квартирі на четвертому поверсі: кухня, наша спальня, кімната для двох дітей і балкон. Вона невелика, але є місце і для уроків, і для вечері, і для вечора разом.",
   },
   {
     id: "personal-5",
@@ -96,9 +96,9 @@ export const topics: Topic[] = [
     titleUk: "Режим дня.",
     titleEn: "Daily routine.",
     answerEn:
-      "I get up at seven, have breakfast, and leave for school by eight. After lessons I do homework, take a short walk, and try to be in bed before eleven.",
+      "I get up at seven, make breakfast, and get the children ready for school while my husband leaves for work. After school there is homework and dinner, and I sit down only when both children are in bed.",
     answerUk:
-      "Ранок починається о сьомій: сніданок, і до восьмої вже треба виходити до школи. Після уроків є домашнє завдання, коротка прогулянка, а лягати варто до одинадцятої.",
+      "Ранок починається о сьомій: сніданок, діти збираються до школи, а чоловік виходить на роботу. Після уроків є домашнє завдання і вечеря, і сісти вдається лише тоді, коли обидві дитини вже сплять.",
   },
   {
     id: "personal-6",
@@ -107,9 +107,9 @@ export const topics: Topic[] = [
     titleUk: "Здоровий спосіб життя.",
     titleEn: "A healthy way of life.",
     answerEn:
-      "I try to eat at regular times, drink enough water, and walk every day. Sleep matters just as much, because a late night makes the next day harder.",
+      "I try to cook regular meals for the family, drink enough water, and walk with the children every day. Sleep matters just as much, because a late night makes the next morning with them harder.",
     answerUk:
-      "Здоровий день для мене складається з вчасної їжі, води і хоча б прогулянки. Сон важить не менше, бо пізній відбій робить наступний день важчим.",
+      "Здоровий день для мене складається з вчасної їжі для родини, води і хоча б прогулянки з дітьми. Сон важить не менше, бо пізній відбій робить наступний ранок з ними важчим.",
   },
   {
     id: "personal-7",
@@ -118,9 +118,9 @@ export const topics: Topic[] = [
     titleUk: "Дружба, любов.",
     titleEn: "Friendship, love.",
     answerEn:
-      "A real friend tells you the truth and stays near you in a hard week, not only on good days. For me, love begins with respect and with the wish to understand the other person.",
+      "My husband is the person I talk to at the end of a hard day, and a real friend stays near our family, not only on good days. For me, love is respect, patience, and the wish to understand each other while we raise two children.",
     answerUk:
-      "Справжній друг говорить чесно і лишається поруч у важкий тиждень, а не лише в радісні дні. Любов для мене починається з поваги і з бажання зрозуміти іншу людину.",
+      "Чоловік є людиною, з якою я говорю наприкінці важкого дня, а справжній друг лишається поруч із нашою родиною, а не лише в радісні дні. Любов для мене складається з поваги, терпіння і бажання розуміти одне одного, поки ми ростимо двох дітей.",
   },
   {
     id: "personal-8",
@@ -129,9 +129,9 @@ export const topics: Topic[] = [
     titleUk: "Стосунки з однолітками, у колективі.",
     titleEn: "Relations with peers, in a group.",
     answerEn:
-      "In class we often work in groups, so I have to listen and share the task fairly. Conflicts happen, and it is better to name the problem calmly than to stay silent.",
+      "At the school gate and among other parents I have to listen and share the load fairly, just as the children do in class. Disagreements happen, and it is better to name the problem calmly than to stay silent.",
     answerUk:
-      "У класі ми часто працюємо в групах, тож доводиться слухати і ділити роботу порівну. Конфлікти трапляються, і краще спокійно назвати те, що непокоїть, ніж мовчати.",
+      "Біля школи і серед інших батьків доводиться слухати і ділити клопіт порівну, так само як діти роблять це в класі. Розбіжності трапляються, і краще спокійно назвати те, що непокоїть, ніж мовчати.",
   },
   {
     id: "personal-9",
@@ -140,9 +140,9 @@ export const topics: Topic[] = [
     titleUk: "Світ захоплень.",
     titleEn: "The world of hobbies.",
     answerEn:
-      "My main hobby is photography: streets, trees, and ordinary people. It teaches me to look more carefully at things I would otherwise walk past.",
+      "My main hobby is reading after the children are asleep, and sometimes I take photos of our walks. It gives me a quiet hour that belongs to me, not only to the family timetable.",
     answerUk:
-      "Головне захоплення: фотографія вулиць, дерев і звичайних людей. Таке хобі вчить дивитися уважніше на те, повз що легко пройти.",
+      "Головне захоплення: читання, коли діти вже сплять, і часом фотографії наших прогулянок. Це дає спокійну годину, яка належить мені, а не лише розкладу родини.",
   },
   {
     id: "personal-10",
@@ -151,9 +151,9 @@ export const topics: Topic[] = [
     titleUk: "Дозвілля, відпочинок.",
     titleEn: "Leisure, rest.",
     answerEn:
-      "At the weekend I meet friends, read, or go to the park to step away from school. A good rest, for me, is not empty time but something I chose myself.",
+      "At the weekend we go to the park with the children, or my husband and I take a short walk after they are in bed. A good rest, for me, is time I chose with my family, not an empty hour taken from them.",
     answerUk:
-      "На вихідних я зустрічаюся з друзями, читаю або йду в парк, щоб відійти від шкільних справ. Добрий відпочинок для мене полягає не в байдикуванні, а в справі, яку обираю самостійно.",
+      "На вихідних ми йдемо в парк з дітьми, або з чоловіком виходимо на коротку прогулянку, коли вони вже сплять. Добрий відпочинок для мене полягає в часі, який я обираю разом із родиною, а не в порожній годині, відібраній у них.",
   },
   {
     id: "personal-11",
@@ -162,9 +162,9 @@ export const topics: Topic[] = [
     titleUk: "Особистісні пріоритети.",
     titleEn: "Personal priorities.",
     answerEn:
-      "Right now my priorities are studying, my family, and my health. I also need time for hobbies, because a life made only of duties feels too narrow.",
+      "Right now my priorities are our two children, my husband, and my health. I also need a little time for myself, because a life made only of duties feels too narrow.",
     answerUk:
-      "Зараз на першому місці навчання, родина і здоров’я. Час на захоплення теж потрібен, бо життя з самих обов’язків стає надто вузьким.",
+      "Зараз на першому місці двоє дітей, чоловік і здоров’я. Трохи часу для себе теж потрібно, бо життя з самих обов’язків стає надто вузьким.",
   },
   {
     id: "personal-12",
@@ -173,9 +173,9 @@ export const topics: Topic[] = [
     titleUk: "Плани на майбутнє, вибір професії.",
     titleEn: "Plans for the future, choice of profession.",
     answerEn:
-      "I would like to work with languages, either as a teacher or as a translator. The choice can still change, so I am trying different subjects before I decide.",
+      "My plan is to keep learning English and to find work that fits the children's school day. The choice can still change, so I am taking it step by step while the children are growing.",
     answerUk:
-      "Хочеться працювати з мовами: учителювати або перекладати. Вибір ще може змінитися, тож поки я пробую різні предмети.",
+      "План такий: далі вчити англійську і знайти роботу, яка вкладається в шкільний день дітей. Вибір ще може змінитися, тож я рухаюся крок за кроком, поки діти ростуть.",
   },
   {
     id: "public-1",
@@ -184,9 +184,9 @@ export const topics: Topic[] = [
     titleUk: "Погода. Природа. Навколишнє середовище.",
     titleEn: "Weather. Nature. The environment.",
     answerEn:
-      "Today the weather is mild, though autumn in our city is often rainy and windy. I care about nature, because clean air, trees, and rivers make ordinary life healthier.",
+      "Today the weather is mild, though autumn in our city is often rainy and windy. I care about nature, because clean air and a park nearby make walks with the children healthier.",
     answerUk:
-      "Сьогодні погода м’яка, хоча восени в нашому місті часто дощить і віє вітер. Природа мені не байдужа, бо чисте повітря, дерева й річки роблять повсякденне життя здоровішим.",
+      "Сьогодні погода м’яка, хоча восени в нашому місті часто дощить і віє вітер. Природа мені не байдужа, бо чисте повітря і парк поруч роблять прогулянки з дітьми здоровішими.",
   },
   {
     id: "public-2",
@@ -195,9 +195,9 @@ export const topics: Topic[] = [
     titleUk: "Життя в країні, мову якої вивчають.",
     titleEn: "Life in the country whose language you are learning.",
     answerEn:
-      "In the United Kingdom people usually greet one another politely, queue, and value being on time. Daily life there turns around school or work, public transport, and plans for the weekend.",
+      "In the United Kingdom people usually greet one another politely, queue, and value being on time. Daily life there, as in our home, turns around school, work, and plans for the weekend with the family.",
     answerUk:
-      "У Великій Британії люди зазвичай вітаються ввічливо, стоять у черзі й цінують пунктуальність. Повсякденне життя там тримається на навчанні чи роботі, громадському транспорті й звичці планувати вихідні.",
+      "У Великій Британії люди зазвичай вітаються ввічливо, стоять у черзі й цінують пунктуальність. Повсякденне життя там, як і в нас удома, тримається на школі, роботі й звичці планувати вихідні з родиною.",
   },
   {
     id: "public-3",
@@ -206,9 +206,9 @@ export const topics: Topic[] = [
     titleUk: "Подорожі, екскурсії.",
     titleEn: "Travel, excursions.",
     answerEn:
-      "I like travelling because a new city shows how other people live, eat, and spend their time. Even a short school excursion can teach more than a page in a textbook.",
+      "I like travelling with my husband and the children, because a new city shows them how other people live, eat, and spend their time. Even a short family outing can teach more than a page in a textbook.",
     answerUk:
-      "Мені подобається подорожувати, бо нове місто показує, як інші люди живуть, їдять і проводять час. Навіть коротка шкільна екскурсія може дати більше, ніж сторінка в підручнику.",
+      "Мені подобається подорожувати з чоловіком і дітьми, бо нове місто показує їм, як інші люди живуть, їдять і проводять час. Навіть коротка сімейна прогулянка може дати більше, ніж сторінка в підручнику.",
   },
   {
     id: "public-4",
@@ -219,9 +219,9 @@ export const topics: Topic[] = [
     titleEn:
       "Culture and art in Ukraine and in the country whose language you are learning.",
     answerEn:
-      "Ukrainian culture is rich in song, embroidery, and literature, while British culture is widely known for theatre, museums, and music. In both countries, art keeps the memory of a nation alive.",
+      "Ukrainian culture is rich in song, embroidery, and literature, while British culture is widely known for theatre, museums, and music. I want our children to know both, because art keeps the memory of a nation alive.",
     answerUk:
-      "Українська культура багата на пісню, вишивку й літературу, а британська відома театром, музеями та музикою. В обох країнах мистецтво зберігає пам’ять народу.",
+      "Українська культура багата на пісню, вишивку й літературу, а британська відома театром, музеями та музикою. Хочу, щоб наші діти знали і те, і те, бо мистецтво зберігає пам’ять народу.",
   },
   {
     id: "public-5",
@@ -231,9 +231,9 @@ export const topics: Topic[] = [
     titleEn:
       "Sport in Ukraine and in the country whose language you are learning.",
     answerEn:
-      "Football is popular in both Ukraine and Britain, and many young people also run, swim, or train in a gym. Sport is not only about winning: it builds discipline and gives you a team.",
+      "Football is popular in both Ukraine and Britain, and our children also run, swim, or play outside after school. Sport is not only about winning: it builds discipline and gives them a team.",
     answerUk:
-      "Футбол популярний і в Україні, і в Британії, а багато молоді ще бігає, плаває або тренується в залі. Спорт виховує дисципліну й відчуття команди, навіть коли перемоги немає.",
+      "Футбол популярний і в Україні, і в Британії, а наші діти ще бігають, плавають або граються надворі після школи. Спорт виховує дисципліну й відчуття команди, навіть коли перемоги немає.",
   },
   {
     id: "public-6",
@@ -243,9 +243,9 @@ export const topics: Topic[] = [
     titleEn:
       "Literature in Ukraine and in the country whose language you are learning.",
     answerEn:
-      "At school we read Taras Shevchenko and Lesia Ukrainka, and in English we meet Shakespeare and modern British writers. A good book lets you enter another time and another way of thinking.",
+      "At school our children read Taras Shevchenko and Lesia Ukrainka, and in English they meet Shakespeare and modern British writers. At home I read with them, because a good book lets you enter another time and another way of thinking.",
     answerUk:
-      "У школі ми читаємо Тараса Шевченка і Лесю Українку, а англійською знайомимося з Шекспіром і сучасними британськими письменниками. Добра книжка дає змогу увійти в інший час і в інший спосіб мислення.",
+      "У школі наші діти читають Тараса Шевченка і Лесю Українку, а англійською знайомляться з Шекспіром і сучасними британськими письменниками. Удома я читаю разом із ними, бо добра книжка дає змогу увійти в інший час і в інший спосіб мислення.",
   },
   {
     id: "public-7",
@@ -254,9 +254,9 @@ export const topics: Topic[] = [
     titleUk: "Засоби масової інформації.",
     titleEn: "The mass media.",
     answerEn:
-      "I follow the news on my phone, but I check more than one source before I believe a story. Television, newspapers, and social media shape opinions, so it matters who is speaking and why.",
+      "I follow the news on my phone after the children are in bed, but I check more than one source before I believe a story. Television and social media shape their opinions too, so it matters who is speaking and why.",
     answerUk:
-      "Новини я читаю в телефоні, але намагаюся перевірити кілька джерел, перш ніж повірити історії. Телебачення, газети й соціальні мережі формують думку, тож важливо, хто говорить і навіщо.",
+      "Новини я читаю в телефоні, коли діти вже сплять, але намагаюся перевірити кілька джерел, перш ніж повірити історії. Телебачення й соціальні мережі формують і їхню думку, тож важливо, хто говорить і навіщо.",
   },
   {
     id: "public-8",
@@ -265,9 +265,9 @@ export const topics: Topic[] = [
     titleUk: "Молодь і сучасний світ.",
     titleEn: "Young people and the modern world.",
     answerEn:
-      "Young people today grow up with the internet, fast news, and a wide choice of study and work. The hard part is keeping real friendship and your own opinion in all that noise.",
+      "Our children are growing up with the internet, fast news, and a wide choice of study and work. The hard part, as their mother, is to keep real friendship and their own opinion in all that noise.",
     answerUk:
-      "Сучасна молодь зростає з інтернетом, швидкими новинами і великим вибором навчання та роботи. Важко не загубити серед цього шуму справжню дружбу і власну думку.",
+      "Наші діти зростають з інтернетом, швидкими новинами і великим вибором навчання та роботи. Мені, як матері, важко вберегти серед цього шуму їхню справжню дружбу і власну думку.",
   },
   {
     id: "public-9",
@@ -276,9 +276,9 @@ export const topics: Topic[] = [
     titleUk: "Людина і довкілля.",
     titleEn: "People and the environment.",
     answerEn:
-      "People change the environment every day by how they travel, shop, and throw things away. I try to save electricity, sort rubbish, and remember that clean water does not last forever.",
+      "Our family changes the environment every day by how we travel, shop, and throw things away. I try to save electricity, sort rubbish with the children, and remember that clean water does not last forever.",
     answerUk:
-      "Людина щодня змінює довкілля тим, як їздить, купує і викидає речі. Я намагаюся економити електроенергію, сортувати сміття і пам’ятати, що запас чистої води не безмежний.",
+      "Наша родина щодня змінює довкілля тим, як ми їздимо, купуємо і викидаємо речі. Я намагаюся економити електроенергію, сортувати сміття разом із дітьми і пам’ятати, що запас чистої води не безмежний.",
   },
   {
     id: "public-10",
@@ -287,9 +287,9 @@ export const topics: Topic[] = [
     titleUk: "Одяг.",
     titleEn: "Clothes.",
     answerEn:
-      "For school I choose simple, comfortable clothes, and something a little smarter for a concert or a family visit. Clothes say something about you, but they should never matter more than the person.",
+      "For school the children wear simple, comfortable clothes, and I choose something a little smarter for a family visit. Clothes say something about a person, but they should never matter more than the person.",
     answerUk:
-      "Для школи я обираю простий зручний одяг, а на концерт чи в гості беру трохи ошатніший. Одяг щось про людину говорить, але ніколи не має важити більше, ніж вона сама.",
+      "Для школи діти носять простий зручний одяг, а в гості я беру для себе трохи ошатніший. Одяг щось про людину говорить, але ніколи не має важити більше, ніж вона сама.",
   },
   {
     id: "public-11",
@@ -298,9 +298,9 @@ export const topics: Topic[] = [
     titleUk: "Покупки.",
     titleEn: "Shopping.",
     answerEn:
-      "I usually buy food at the local market, and clothes only when I truly need them. Before I pay, I look at the price and ask whether I will still want the thing next week.",
+      "I usually buy food for the family at the local market, and clothes for the children only when they truly need them. Before I pay, I look at the price and ask whether we will still use the thing next week.",
     answerUk:
-      "Продукти я зазвичай купую на місцевому ринку, а одяг лише тоді, коли він справді потрібен. Перед оплатою дивлюся на ціну і питаю себе, чи захочу цю річ і наступного тижня.",
+      "Продукти для родини я зазвичай купую на місцевому ринку, а одяг дітям лише тоді, коли він справді потрібен. Перед оплатою дивлюся на ціну і питаю себе, чи користуватимемося цією річчю і наступного тижня.",
   },
   {
     id: "public-12",
@@ -309,9 +309,9 @@ export const topics: Topic[] = [
     titleUk: "Харчування.",
     titleEn: "Food.",
     answerEn:
-      "A normal day for me includes breakfast, a hot meal at lunch, and something light in the evening. I like Ukrainian home cooking, and I am learning to eat fewer sweets.",
+      "A normal day in our home includes breakfast, a hot meal after school, and something light in the evening for my husband and the children. I like Ukrainian home cooking, and I am learning to give them fewer sweets.",
     answerUk:
-      "Звичайний день складається зі сніданку, гарячого обіду і чогось легкого ввечері. Мені смакує українська домашня кухня, і я потроху вчуся їсти менше солодкого.",
+      "Звичайний день у нас складається зі сніданку, гарячого обіду після школи і чогось легкого ввечері для чоловіка й дітей. Мені смакує українська домашня кухня, і я потроху вчуся давати їм менше солодкого.",
   },
   {
     id: "public-13",
@@ -320,9 +320,9 @@ export const topics: Topic[] = [
     titleUk: "Науково-технічний прогрес, видатні діячі науки.",
     titleEn: "Scientific and technical progress, outstanding scientists.",
     answerEn:
-      "Scientific progress has changed daily life through electricity, medicine, and the internet. One figure I remember is Serhii Koroliov, born in Zhytomyr, whose work helped open the way to spaceflight.",
+      "Scientific progress has changed our family life through electricity, medicine, and the internet. One figure I tell the children about is Serhii Koroliov, born in Zhytomyr, whose work helped open the way to spaceflight.",
     answerUk:
-      "Науково-технічний прогрес змінив повсякденне життя електрикою, медициною та інтернетом. Серед видатних діячів пам’ятаю Сергія Корольова, уродженця Житомира, чия праця відкрила шлях до польотів у космос.",
+      "Науково-технічний прогрес змінив наше родинне життя електрикою, медициною та інтернетом. Дітям я розповідаю про Сергія Корольова, уродженця Житомира, чия праця відкрила шлях до польотів у космос.",
   },
   {
     id: "public-14",
@@ -331,9 +331,9 @@ export const topics: Topic[] = [
     titleUk: "Україна у світовій спільноті.",
     titleEn: "Ukraine in the world community.",
     answerEn:
-      "Ukraine is a European country with its own language, culture, and a clear wish to take part in international life. Its voice matters in questions of security, culture, and the right of a nation to choose its future.",
+      "Ukraine is a European country with its own language, culture, and a clear wish to take part in international life. I want our children to know that its voice matters in questions of security, culture, and the right of a nation to choose its future.",
     answerUk:
-      "Україна є європейською державою зі своєю мовою, культурою і виразним бажанням брати участь у міжнародному житті. Її голос важливий у питаннях безпеки, культури і права народу самому обирати майбутнє.",
+      "Україна є європейською державою зі своєю мовою, культурою і виразним бажанням брати участь у міжнародному житті. Хочу, щоб наші діти знали: її голос важливий у питаннях безпеки, культури і права народу самому обирати майбутнє.",
   },
   {
     id: "public-15",
@@ -344,9 +344,9 @@ export const topics: Topic[] = [
     titleEn:
       "Holidays, memorable dates, and events in Ukraine and in the country whose language you are learning.",
     answerEn:
-      "In Ukraine we mark Independence Day and Christmas, and in Britain people celebrate Christmas, Easter, and the official birthday of the King. Holidays are a way to remember history and to spend time with family.",
+      "In our family we mark Independence Day and Christmas, and in Britain people celebrate Christmas, Easter, and the official birthday of the King. Holidays are a way to remember history and to spend the day with my husband and the children.",
     answerUk:
-      "В Україні відзначають День Незалежності і Різдво, а в Британії Різдво, Великдень і офіційний день народження короля. Свята допомагають пам’ятати історію і бути разом із родиною.",
+      "У нашій родині відзначають День Незалежності і Різдво, а в Британії Різдво, Великдень і офіційний день народження короля. Свята допомагають пам’ятати історію і провести день разом із чоловіком і дітьми.",
   },
   {
     id: "public-16",
@@ -357,9 +357,9 @@ export const topics: Topic[] = [
     titleEn:
       "Traditions and customs in Ukraine and in the country whose language you are learning.",
     answerEn:
-      "Ukrainian tradition lives in the vyshyvanka, in carols, and in welcoming a guest with bread. British customs such as tea at five or Bonfire Night look different, but they also bring people together.",
+      "In our home Ukrainian tradition lives in the vyshyvanka, in carols, and in welcoming a guest with bread. British customs such as tea at five or Bonfire Night look different, but I tell the children that they also bring people together.",
     answerUk:
-      "Українська традиція живе у вишиванці, у колядках і в звичаї зустрічати гостя хлібом. Британські звичаї, як-от чай о п’ятій чи ніч Гая Фокса, виглядають інакше, але теж збирають людей разом.",
+      "У нашому домі українська традиція живе у вишиванці, у колядках і в звичаї зустрічати гостя хлібом. Британські звичаї, як-от чай о п’ятій чи ніч Гая Фокса, виглядають інакше, але я пояснюю дітям, що вони теж збирають людей разом.",
   },
   {
     id: "public-17",
@@ -370,9 +370,9 @@ export const topics: Topic[] = [
     titleEn:
       "Outstanding figures in the history and culture of Ukraine and of the country whose language you are learning.",
     answerEn:
-      "Taras Shevchenko shaped the Ukrainian language and the idea of human dignity, and Lesia Ukrainka showed the strength of a free mind. In Britain, William Shakespeare is still the name most people connect with theatre and the English language.",
+      "I tell our children about Taras Shevchenko, who shaped the Ukrainian language and the idea of human dignity, and about Lesia Ukrainka, who showed the strength of a free mind. In Britain, William Shakespeare is still the name most people connect with theatre and the English language.",
     answerUk:
-      "Тарас Шевченко сформував українське слово і думку про людську гідність, а Леся Українка показала силу вільного розуму. У Британії Вільям Шекспір досі лишається іменем, з яким пов’язують театр і англійську мову.",
+      "Дітям я розповідаю про Тараса Шевченка, який сформував українське слово і думку про людську гідність, і про Лесю Українку, яка показала силу вільного розуму. У Британії Вільям Шекспір досі лишається іменем, з яким пов’язують театр і англійську мову.",
   },
   {
     id: "public-18",
@@ -383,9 +383,9 @@ export const topics: Topic[] = [
     titleEn:
       "Notable sites of the historical and cultural heritage of Ukraine and of the country whose language you are learning.",
     answerEn:
-      "Saint Sophia Cathedral in Kyiv and the historic centre of Lviv belong to the cultural heritage of Ukraine and are listed by UNESCO. In Britain, Stonehenge and the Tower of London tell a much older story of the island.",
+      "Saint Sophia Cathedral in Kyiv and the historic centre of Lviv belong to Ukraine's heritage and are listed by UNESCO, and I would like to show them to our children. In Britain, Stonehenge and the Tower of London tell a much older story of the island.",
     answerUk:
-      "Софійський собор у Києві та історичний центр Львова належать до культурної спадщини України і входять до списку ЮНЕСКО. У Британії Стоунхендж і Лондонський Тауер розповідають значно давнішу історію острова.",
+      "Софійський собор у Києві та історичний центр Львова належать до спадщини України і входять до списку ЮНЕСКО, і мені хотілося б показати їх нашим дітям. У Британії Стоунхендж і Лондонський Тауер розповідають значно давнішу історію острова.",
   },
   {
     id: "public-19",
@@ -394,9 +394,9 @@ export const topics: Topic[] = [
     titleUk: "Музеї, виставки.",
     titleEn: "Museums, exhibitions.",
     answerEn:
-      "A museum lets you stand in front of a real object instead of only reading about it. I like exhibitions that explain the story behind a picture, a tool, or a document.",
+      "A museum lets the children stand in front of a real object instead of only reading about it. I like exhibitions we can visit together, where someone explains the story behind a picture, a tool, or a document.",
     answerUk:
-      "Музей дає змогу стати перед справжньою річчю, а не лише прочитати про неї. Мені подобаються виставки, які пояснюють історію за картиною, знаряддям чи документом.",
+      "Музей дає дітям змогу стати перед справжньою річчю, а не лише прочитати про неї. Мені подобаються виставки, куди можна піти разом і де пояснюють історію за картиною, знаряддям чи документом.",
   },
   {
     id: "public-20",
@@ -405,9 +405,9 @@ export const topics: Topic[] = [
     titleUk: "Живопис, музика.",
     titleEn: "Painting, music.",
     answerEn:
-      "Painting and music speak without a long explanation: a colour or a melody can change your mood in a minute. I listen to Ukrainian songs and to British bands, depending on the day.",
+      "Painting and music speak without a long explanation, and a song can change the mood in our flat in a minute. I listen to Ukrainian songs with the children and to quieter music in the evening with my husband.",
     answerUk:
-      "Живопис і музика говорять без довгих пояснень: колір або мелодія здатні за хвилину змінити настрій. Я слухаю і українські пісні, і британські гурти, залежно від дня.",
+      "Живопис і музика говорять без довгих пояснень, і пісня здатна за хвилину змінити настрій у нашій квартирі. З дітьми я слухаю українські пісні, а ввечері з чоловіком тихішу музику.",
   },
   {
     id: "public-21",
@@ -416,9 +416,9 @@ export const topics: Topic[] = [
     titleUk: "Кіно, телебачення, театр.",
     titleEn: "Cinema, television, theatre.",
     answerEn:
-      "Cinema and television are easy to turn on at home, while theatre asks you to be present and watch the story happen live. I enjoy all three, but a good play stays in my memory longer than a series.",
+      "We watch films and television at home with the children, while theatre is a rare evening out for my husband and me, because the story happens live. I enjoy all three, but a good play stays in my memory longer than a series.",
     answerUk:
-      "Кіно й телебачення легко ввімкнути вдома, а театр вимагає присутності, бо історія відбувається просто перед вами. Мені близькі всі три, але добра вистава лишається в пам’яті довше за серіал.",
+      "Фільми ми дивимося вдома з дітьми, а театр є рідкісним вечором для мене з чоловіком, бо історія відбувається просто перед нами. Мені близькі всі три, але добра вистава лишається в пам’яті довше за серіал.",
   },
   {
     id: "public-22",
@@ -427,9 +427,9 @@ export const topics: Topic[] = [
     titleUk: "Обов’язки та права людини.",
     titleEn: "Human duties and rights.",
     answerEn:
-      "Every person has the right to life, education, and a free opinion, and also the duty to respect those same rights in other people. Freedom works when it does not harm another person’s dignity.",
+      "Every person has the right to life, education, and a free opinion, and also the duty to respect those same rights in other people. I want our children to learn that freedom works when it does not harm another person's dignity.",
     answerUk:
-      "Кожна людина має право на життя, освіту і вільну думку, а також обов’язок поважати ті самі права в інших. Свобода працює тоді, коли не зачіпає гідності іншої людини.",
+      "Кожна людина має право на життя, освіту і вільну думку, а також обов’язок поважати ті самі права в інших. Хочу, щоб наші діти розуміли: свобода працює тоді, коли не зачіпає гідності іншої людини.",
   },
   {
     id: "public-23",
@@ -438,9 +438,9 @@ export const topics: Topic[] = [
     titleUk: "Міжнародні організації, міжнародний рух.",
     titleEn: "International organisations, the international movement.",
     answerEn:
-      "The United Nations and the Red Cross exist so that countries can act together for peace, health, and help after a disaster. Many problems cross borders, so one state cannot solve them alone.",
+      "The United Nations and the Red Cross exist so that countries can act together for peace, health, and help after a disaster. I explain to the children that many problems cross borders, so one state cannot solve them alone.",
     answerUk:
-      "ООН і Червоний Хрест існують для того, щоб країни діяли разом заради миру, здоров’я і допомоги після лиха. Багато проблем перетинають кордони, тож одна держава не розв’яже їх сама.",
+      "ООН і Червоний Хрест існують для того, щоб країни діяли разом заради миру, здоров’я і допомоги після лиха. Я пояснюю дітям, що багато проблем перетинають кордони, тож одна держава не розв’яже їх сама.",
   },
   {
     id: "education-1",
@@ -449,9 +449,9 @@ export const topics: Topic[] = [
     titleUk: "Освіта, навчання, виховання.",
     titleEn: "Education, learning, upbringing.",
     answerEn:
-      "Education is more than marks: it is how we learn to think, to work with others, and to tell a fact from a guess. Upbringing at home and at school should teach respect, honesty, and responsibility.",
+      "For our children, education is more than marks: it is how they learn to think, to work with others, and to tell a fact from a guess. Upbringing at home, with my husband and me, should teach respect, honesty, and responsibility.",
     answerUk:
-      "Освіта є чимось більшим за оцінки: це вміння думати, працювати з іншими і відрізняти факт від здогаду. Виховання вдома і в школі має вчити поваги, чесності й відповідальності.",
+      "Для наших дітей освіта є чимось більшим за оцінки: це вміння думати, працювати з іншими і відрізняти факт від здогаду. Виховання вдома, разом із чоловіком, має вчити поваги, чесності й відповідальності.",
   },
   {
     id: "education-2",
@@ -460,8 +460,8 @@ export const topics: Topic[] = [
     titleUk: "Студентське життя.",
     titleEn: "Student life.",
     answerEn:
-      "Student life means lectures, the library, new friends, and the first real chance to organise your own time. It is exciting and tiring at once, because nobody reminds you of every deadline.",
+      "Student life, as I remember it, means lectures, the library, new friends, and the first real chance to organise your own time. I hope our children will have that later, and for now I help them learn how to meet a deadline without a reminder.",
     answerUk:
-      "Студентське життя складається з лекцій, бібліотеки, нових друзів і першої справжньої можливості самому розпоряджатися часом. Воно водночас цікаве й виснажливе, бо вже ніхто не нагадує про кожен термін здачі.",
+      "Студентське життя, яким я його пам’ятаю, складається з лекцій, бібліотеки, нових друзів і першої справжньої можливості самому розпоряджатися часом. Сподіваюся, наші діти матимуть це згодом, а поки я вчу їх здавати роботу вчасно без нагадування.",
   },
 ];

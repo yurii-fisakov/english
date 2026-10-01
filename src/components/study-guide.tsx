@@ -116,9 +116,9 @@ export function StudyGuide() {
           <figure className="overflow-hidden rounded-xl border border-border bg-white">
             <div className="max-h-72 overflow-auto lg:max-h-80">
               <Image
-                src="/source-page.jpg"
-                width={1400}
-                height={1867}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/source-page.jpg`}
+                width={768}
+                height={1024}
                 alt={ui.sourceAlt}
                 className="h-auto w-full"
                 sizes="(min-width: 1024px) 280px, 100vw"
