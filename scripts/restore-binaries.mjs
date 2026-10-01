@@ -4,7 +4,7 @@ import { dirname } from "node:path";
 
 function verifyChunks() {
   const manifest = "encoded/chunks/SHA256SUMS";
-  if (!existsSync(manifest)) return true;
+  if (!existsSync(manifest)) return;
   const mismatches = [];
   for (const line of readFileSync(manifest, "utf8").split("\n")) {
     if (!line.trim()) continue;
@@ -17,15 +17,11 @@ function verifyChunks() {
     if (actual !== expected) mismatches.push(`checksum ${path}`);
   }
   if (mismatches.length > 0) {
-    console.log(mismatches.join("\n"));
-    return false;
+    throw new Error(mismatches.join("\n"));
   }
-  return true;
 }
 
-if (!verifyChunks()) {
-  console.log("encoded chunks are incomplete, so the build keeps the binaries already in the tree");
-} else {
+verifyChunks();
 
 function concatChunks(dir, target) {
   if (existsSync(target) || !existsSync(dir)) return;
@@ -52,5 +48,4 @@ for (const [encoded, target] of pairs) {
   const data = readFileSync(encoded, "utf8").replace(/\s/g, "");
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, Buffer.from(data, "base64"));
-}
 }
